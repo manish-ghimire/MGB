@@ -21,7 +21,7 @@ Task1: [Link](http://127.0.0.1:8000/api/days/2021-01-01%2009:00:00/2021-12-31%20
 
 Task2 is to return back the number of complete weeks in between two DateTime parameters
 
-DATEITME Parameter format: YYYY-MM-DD HH:MM:SS
+DATETIME Parameter format: YYYY-MM-DD HH:MM:SS
 - Task2 returns back weeks difference: http://127.0.0.1:8000/api/weeks/DATETIME/DATETIME
 
 Example:
@@ -30,9 +30,9 @@ Task2: [Link](http://127.0.0.1:8000/api/weeks/2021-01-01%2009:00:00/2021-12-31%2
 
 ## Task3
 
-Task3 allows user to pass region, city and date/time and returns back the equivalent east australian standard time (AEST)
+Task3 allows user to pass in region, city and date/time in the URL and returns back the equivalent east australian standard time (AEST)
 
-REGION Parameter: Can be seen in this [link](https://www.php.net/manual/en/timezones.php)
+REGION Parameter (One of these): Africa, America, Antarctica, Arctic, Asia, Atlantic, Australia, Europe, Indian, Pacific
 CITY Parameter: Can be seen in this [link](https://www.php.net/manual/en/timezones.php)
 Time Parameter: HH:MM:SS
 
