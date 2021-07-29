@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/days/{start}/{end}', [DateTimeController::class, 'task1']);
-Route::get('/weeks/{start}/{end}', [DateTimeController::class, 'task2']);
-Route::get('{region}/{city}/{time}', [DateTimeController::class, 'task3']);
+Route::get('/days/{start}/{end}', [DateTimeController::class, 'days']);
+Route::get('/weeks/{start}/{end}', [DateTimeController::class, 'weeks']);
+Route::get('{region}/{city}/{time}', [DateTimeController::class, 'timezone']);
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

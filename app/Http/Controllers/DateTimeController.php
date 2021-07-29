@@ -15,7 +15,7 @@ class DateTimeController extends Controller
 
 
      //Task 1
-    public function task1($start, $end)
+    public function days($start, $end)
     {
         $start = Carbon::parse($start); // First DateTime 
         $end = Carbon::parse($end); // Second DateTime
@@ -28,7 +28,7 @@ class DateTimeController extends Controller
 
 
     // Task 2
-    public function task2($start, $end)
+    public function weeks($start, $end)
     {
         
         $start = Carbon::parse($start); // First DateTime
@@ -41,7 +41,7 @@ class DateTimeController extends Controller
 
 
     // Task 3
-    public function task3($regionFrom, $cityFrom, $time,)
+    public function timezone($region, $city, $time,)
     {
         $time = Carbon::parse($time)->createFromFormat('H:i:s', $time, $region.'/'.$city); // Parse to Carbon object and format it as needed by the function
         $time = $time->setTimezone('Australia/Sydney')->toTimeString();  // Change the time to the australian AEST
